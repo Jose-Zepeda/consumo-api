@@ -1,0 +1,101 @@
+
+body {
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Opcional: para que el fondo no se mueva al hacer scroll */
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* Banner con Carrusel */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Galería de Cards */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: lightslategray;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2 {
+
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #555;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
